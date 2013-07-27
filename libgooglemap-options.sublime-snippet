@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+{
+  //referencia => https://developers.google.com/maps/documentation/javascript/tutorial?hl=es#MapOptions
+  center: ${1:gmaplatlng},
+  zoom: ${2:zoom},
+  mapTypeId: ${3: gmaptype}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gmapoptions</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

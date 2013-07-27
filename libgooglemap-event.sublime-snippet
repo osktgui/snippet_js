@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+google.maps.event.addListener(${1:object}, ${2:event}, function(${3:item}){ 
+	${4:implemment}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gmapaddevent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

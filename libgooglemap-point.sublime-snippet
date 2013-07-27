@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+new google.maps.LatLng(${1:latitude}, ${2:longitude});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gmaplatlng</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

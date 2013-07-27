@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+function RadiusWidget() {
+  var circle = new google.maps.Circle({
+    strokeWeight: 2
+  });
+
+  // Set the distance property value, default to 50km.
+  this.set('distance', 50);
+
+  // Bind the RadiusWidget bounds property to the circle bounds property.
+  this.bindTo('bounds', circle);
+
+  // Bind the circle center to the RadiusWidget center property
+  circle.bindTo('center', this);
+
+  // Bind the circle map to the RadiusWidget map
+  circle.bindTo('map', this);
+
+  // Bind the circle radius property to the RadiusWidget radius property
+  circle.bindTo('radius', this);
+}
+RadiusWidget.prototype = new google.maps.MVCObject();
+/*
+	-- Agregar al objeto que quiera enlazar
+	  // Create a new radius widget
+      var radiusWidget = new RadiusWidget();
+
+      // Bind the radiusWidget map to the Object map
+      radiusWidget.bindTo('map', object);
+
+      // Bind the radiusWidget center to the Object position
+      radiusWidget.bindTo('center', object, 'position');
+*/
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gmapradiuswidget</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
